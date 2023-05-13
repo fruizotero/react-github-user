@@ -1,0 +1,50 @@
+.profile_stats {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--bg);
+    border-radius: 1rem;
+}
+
+.stat_item{
+    text-align: center;
+}
+
+.stat_title{
+    font-size: 0.75rem;
+    padding-bottom: 0.25rem;
+}
+
+.stat_value{
+    font-weight: bold;
+    color: var(--text-alt);
+}
+
+@media screen and (min-width:40rem){
+    .profile_stats{
+        justify-content: start;
+        gap: 20%;
+    }
+
+    .stat_item{
+        text-align: left;
+    }
+
+    .stat_title{
+        font-size: 0.85rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .stat_value{
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width:60rem){
+
+    .profile_stats{
+        margin-left: calc(20% + 1.5rem);
+    }
+
+}

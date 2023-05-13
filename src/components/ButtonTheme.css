@@ -1,0 +1,19 @@
+.button-theme{
+    display: flex;
+    gap: 2rem;
+    color: var(--text);
+}
+
+.button-theme:hover{
+    cursor: pointer;
+}
+
+.button-text{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+}
+
+.butto_image{
+    filter: --icon-bg;
+}

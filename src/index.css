@@ -1,0 +1,123 @@
+/* **********     Reset CSS     ********** */
+
+:root {
+
+  --bg: #f6f8ff;
+  --bg-content: #fefefe;
+  --text: #4b6a9b;
+  --text-alt: #2b3442;
+  --shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  --shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+  --icon-bg: brightness(100%);
+
+  /* Btn */
+  --btn: #0079ff;
+  --btn-hover: #60abff;
+
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font-family: 'Space Mono', monospace;
+  border: none;
+  appearance: none;
+  background-color: transparent;
+}
+
+input:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  margin-block: 0;
+  font-weight: 400;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  color: var(--text);
+}
+
+.main{
+  width: inherit;
+  min-height: 100vh;
+  background-color: var(--bg);
+  padding: 1rem 1.25rem;
+  color: var(--text);
+
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  /* box-shadow: var(--shadow); */
+}
+
+.main_container{
+  /* min-width: 18rem; */
+}
+
+@media screen and (min-width:40rem) {
+
+  .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+  }
+
+  .main_container{
+    width: 100%;
+    flex-shrink: 0;
+  }
+  
+}
+
+@media screen and (min-width:60rem){
+
+.main_container{
+  max-width: 48rem;
+}
+
+}
