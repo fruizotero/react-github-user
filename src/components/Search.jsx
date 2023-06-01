@@ -7,8 +7,8 @@ import "./Search.css";
 
 // eslint-disable-next-line react/prop-types
 export function Search({ setData, setError }) {
-  let [search, setSearch] = useState("octocat");
-  let [url, setUrl] = useState("https://api.github.com/users/octocat");
+  let [search, setSearch] = useState("fruizotero");
+  let [url, setUrl] = useState("https://api.github.com/users/fruizotero");
 
   let { data, isLoading, error } = useFetch(url);
 
