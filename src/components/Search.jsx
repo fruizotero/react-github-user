@@ -3,6 +3,7 @@
 
 import React, { Component, useState, useEffect } from "react";
 import { useFetch } from "../hooks/useFetch";
+import iconSearch from "../assets/icon-search.svg";
 import "./Search.css";
 
 // eslint-disable-next-line react/prop-types
@@ -43,7 +44,7 @@ export function Search({ setData, setError }) {
       <div className="search_left">
         <div className="search_image_container">
           <img
-            src="src/assets/icon-search.svg"
+            src={iconSearch}
             alt="Icon search"
             className="search_image"
           />

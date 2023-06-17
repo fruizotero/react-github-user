@@ -5,8 +5,6 @@ import "./Header.css";
 
 // eslint-disable-next-line react/prop-types
 export function Header({ setTheme, theme }) {
-  let pathMoon = "src/assets/icon-moon.svg";
-  let pathSun = "src/assets/icon-sun.svg";
 
   return (
     // eslint-disable-next-line react/prop-types
