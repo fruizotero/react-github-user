@@ -36,11 +36,11 @@ function App() {
   return (
     <main className={`main ${theme ? "" : "dark"}`}>
       <article className="main_container">
-        <Header setTheme={setTheme} theme={theme}></Header>
+        <Header setTheme={setTheme} theme={theme} />
         <section className="content">
-          <Search setNameToSearch={setNameToSearch}></Search>
+          <Search setNameToSearch={setNameToSearch} />
           {error.err && <p>{error.statusText}</p>}
-          <UserInfo theme={theme} data={user}></UserInfo>
+          <UserInfo theme={theme} data={user} />
         </section>
       </article>
     </main>

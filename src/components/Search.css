@@ -38,6 +38,10 @@
     color: var(--text);
 }
 
+.search_input:-internal-autofill-selected{
+    background-color: transparent;
+}
+
 .search_button{
     padding: 0.85rem 1.25rem;
     font-weight: bold;
