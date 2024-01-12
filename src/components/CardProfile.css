@@ -15,8 +15,9 @@
 
 .card_image {
     border-radius: 50%;
-
 }
+
+
 
 .card_right {
     display: flex;
@@ -63,6 +64,7 @@
         width: 7rem;
     }
 
+
     .card_name {
         font-size: 1.75rem;
     }
@@ -91,6 +93,8 @@
         position: absolute;
     }
 
+    
+
     .card_top {
         align-items: start;
         gap: 0;
@@ -108,5 +112,12 @@
 
     .profile_bio{
         margin-left: calc(20% + 1.5rem);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
+
+   
+
+  
 }
