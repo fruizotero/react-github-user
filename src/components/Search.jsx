@@ -1,29 +1,13 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 
-import React, { Component, useState, useEffect } from "react";
-import { useFetch } from "../hooks/useFetch";
+import React, { useState } from "react";
 import iconSearch from "../assets/icon-search.svg";
 import "./Search.css";
 
 // eslint-disable-next-line react/prop-types
-export function Search({ setData, setError }) {
+export function Search({ setNameToSearch }) {
   let [search, setSearch] = useState("fruizotero");
-  let [url, setUrl] = useState("https://api.github.com/users/fruizotero");
-
-  let { data, isLoading, error } = useFetch(url);
-
-  useEffect(() => {
-    if (data != null) {
-      setData(data);
-    }
-    
-    // console.log(data);
-  }, [data]);
-
-  useEffect(()=>{
-    setError(error);
-  }, [error])
 
   const handleOnChange = (e) => {
     setSearch(e.target.value);
@@ -31,27 +15,23 @@ export function Search({ setData, setError }) {
 
   const handleOnKeyUp = (e) => {
     if (e.keyCode == 13) {
-      setUrl(`https://api.github.com/users/${search}`);
+      setNameToSearch(search);
     }
   };
 
   const handleOnClick = () => {
-    setUrl(`https://api.github.com/users/${search}`);
+    setNameToSearch(search);
   };
 
   return (
     <div className="search">
       <div className="search_left">
         <div className="search_image_container">
-          <img
-            src={iconSearch}
-            alt="Icon search"
-            className="search_image"
-          />
+          <img src={iconSearch} alt="Icon search" className="search_image" />
         </div>
         <div className="search_input_container">
           <input
-            type="search" 
+            type="search"
             className="search_input"
             id="search"
             name="search"
